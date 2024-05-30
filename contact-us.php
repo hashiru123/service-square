@@ -92,7 +92,7 @@
             starts with a simple conversation.</p>
         </div>
         <div class="col-md-5">
-          <form action="#" method="post">
+          <form action="mail.php" method="post">
 
             <div class="form-control border-0 mb-3">
               <label for="name" class="mb-1">Name</label>
@@ -110,7 +110,7 @@
             </div>
             <button type="submit" id="submit" name="send" onclick="sendEmail()" class="submit-btn ms-3">Send Message</button>
           </form>
-          <div id="response"></div>s
+          <div id="response"></div>
         </div>
       </div>
     </div>
@@ -166,50 +166,3 @@
 </body>
 
 </html>
-
-
-<?php
-
-if(isset($_POST['send']))
-{
-  $name = $_POST['name'];
-  $name = $_POST['email'];
-  $name = $_POST['message'];
-
-  require 'vendor/autoload.php';
-
-$mail = new PHPMailer\PHPMailer\PHPMailer;
-
-//$mail->SMTPDebug = PHPMailer\PHPMailer\SMTP::DEBUG_SERVER;  // Enable verbose debug output
-
-$mail->isSMTP();                                      // Set mailer to use SMTP
-$mail->Host = 'smtp.gmail.com';  // Specify main and backup SMTP servers
-$mail->SMTPAuth = true;                               // Enable SMTP authentication
-$mail->Username = 'kashifwaheed1000@gmail.com';                 // SMTP username
-$mail->Password = 'fpio issa vfuj afbe';                           // SMTP password
-$mail->SMTPSecure = PHPMailer\PHPMailer\PHPMailer::ENCRYPTION_STARTTLS; // Enable TLS encryption, `ssl` also accepted
-$mail->Port = 587;                                    // TCP port to connect to
-
-$mail->setFrom('kashifwaheed1000@gmail.com', 'Contact-From');
-$mail->addAddress('kashifwaheed1000@gmail.com', 'ServiceSquare');     // Add a recipient
-$mail->addAddress('kashifwaheed1000@gmail.com');               // Name is optional
-$mail->addReplyTo('kashifwaheed1000@gmail.com', 'Information');
-
-// Add attachments if needed
-//$mail->addAttachment('/var/tmp/file.tar.gz');         // Add attachments
-//$mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
-$mail->isHTML(true);                                  // Set email format to HTML
-
-$mail->Subject = 'Here is the subject';
-$mail->Body    = "Sender Name - $name <br> Sender Email - $email <br> message - $message";
-$mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
-
-if(!$mail->send()) {
-    echo 'Message could not be sent.';
-    echo 'Mailer Error: ' . $mail->ErrorInfo;
-} else {
-    echo 'Message has been sent';
-}
-
-}
-?>
