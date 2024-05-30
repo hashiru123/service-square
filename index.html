@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Service Square</title>
+  <link rel="shortcut icon" href="/assets/images/favicon.svg" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="media.css">
+  <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+  <script src="/bootstrap/js/bootstrap.bundle.js"></script>
+  <script rel="stylesheet" src="/script.js"></script>
+</head>
+
+<body>
+
+  <!-- navbar start -->
+  <nav class="navbar navbar-expand-xl sticky-top">
+    <img class="header-shadow" src="/assets/images/header-shadow.png" alt="shadow">
+    <div class="container-fluid px-5 py-3 d-flex justify-content-between align-items-center">
+      <div class="logo"><a class="navbar-brand" href="index.html"><img src="/assets/images/logo1.svg" alt="logo"></a>
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="links">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <!-- <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Dropdown
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      </ul>
+                    </li> -->
+            <li class="nav-item">
+              <a class="nav-link" href="contact-us.php">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+        <form class="d-flex header-social-wrapper" role="search">
+          <div class="header-social d-flex">
+            <a href="https://www.facebook.com/profile.php?id=100024313282542&mibextid=LQQJ4d" target="_blank"><img
+                src="/assets/icons/fb.png" alt="icon"></a>
+            <a href="#"><img src="/assets/icons/twitter.png" alt="icon"></a>
+            <a href="#"><img src="/assets/icons/insta.png" alt="icon"></a>
+            <a href="#"><img src="/assets/icons/in.png" alt="icon"></a>
+          </div>
+          <div class="header-btn d-flex justify-content-center">
+            <a href="tel:0401967967"><img src="/assets/icons/header-call.png" alt="icon"><span>0401967967</span></a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!-- navbar ends -->
+
+  <!-- hero-section html start -->
+  <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="container">
+          <div class="row d-flex align-items-center slider-wrapper">
+            <div class="col-md-6 slider-content">
+              <img src="/assets/images/layer.png" alt="image">
+              <h3>Explore Our Range of Services Today!</h3>
+              <h1>Your One-Stop <br> Home Improvement <br> Destination
+              </h1>
+            </div>
+            <div class="col-md-6 slider-img"><img src="/assets/images/slider1-img.png" alt="image" class="img-fluid">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item carousel-item2">
+        <div class="container">
+          <div class="row d-flex align-items-center slider-wrapper">
+            <div class="col-md-6 slider-content">
+              <h3 class="m-0">Crafting Culinary Spaces <img class="img-fluid" src="/assets/images/line.png" alt="image">
+              </h3>
+              <h1>Elevate Your <span>Home</span> <br> with Expert <span>Kitchen</span><br> Installation <img
+                  class="layer-img" src="/assets/images/layer.png" alt="image"> </h1>
+            </div>
+            <div class="col-md-6 slider-img"><img src="/assets/images/slider2-img.png" alt="image" class="img-fluid">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!-- hero-section html end -->
+
+  <!-- service section start -->
+  <p id="back-to-top" class="id-tab pb-5 mb-5"></p>
+  <p class="pb-5"></p>
+  <section class="py-5 service-main w-100">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center service-title">
+          <img src="/assets/images/checkbox.gif" alt="image">
+          <h1>SERVICES</h1>
+          <p>Your One-Stop Home Improvement Destination <br>
+            Explore Our Range of Services Today!</p>
+        </div>
+      </div>
+    </div>
+    <div class="container service-tabs-main mt-3">
+      <div class="row">
+        <div class="service-tabs d-flex align-items-start gap-4 flex-wrap mt-3">
+          <a href="#wardrobe" class="col-xl-2 col-lg-2 col-md-2 col-3"><img src="/assets/images/wardrobe 1-min.png"
+              alt="img" class="img-fluid">
+            <p>Wardrobe</p>
+          </a>
+          <a href="#garage" class="col-xl-2 col-lg-2 col-md-2 col-3"><img src="/assets/images/card5-min.png" alt="img"
+              class="img-fluid">
+            <p>Garage Storage</p>
+          </a>
+          <a href="#garageDoor" class="col-xl-2 col-lg-2 col-md-2 col-3"><img src="/assets/images/door-new.png"
+              alt="img" class="img-fluid">
+            <p>Garage Door Automation</p>
+          </a>
+          <a href="#kicthen" class="col-xl-2 col-lg-2 col-md-2 col-3"><img src="/assets/images/card2-min.png" alt="img"
+              class="img-fluid">
+            <p>kitchen Installation</p>
+          </a>
+          <a href="#furniture" class="col-xl-2 col-lg-2 col-md-2 col-3"><img src="/assets/images/card1-min.png"
+              alt="img" class="img-fluid">
+            <p>Furniture/Flat Pack Assembly</p>
+          </a>
+          <a href="#roller" class="col-xl-2 col-lg-2 col-md-2 col-3"><img src="/assets/images/roller-new 1.png"
+              alt="img" class="img-fluid">
+            <p>Roller Blind Supply & Install</p>
+          </a>
+          <a href="#gym" class="col-xl-2 col-lg-2 col-md-2 col-3"><img src="/assets/images/card7-min 1-min.png"
+              alt="img" class="img-fluid">
+            <p>Gym & Sports Equipment</p>
+          </a>
+          <a href="#letter" class="col-xl-2 col-lg-2 col-md-2 col-3"><img src="/assets/images/card8-min.png" alt="img"
+              class="img-fluid">
+            <p>Letter Box Installation</p>
+          </a>
+          <a href="#wall" class="col-xl-2 col-lg-2 col-md-2 col-3"><img src="/assets/images/card6-min.png" alt="img"
+              class="img-fluid">
+            <p>Wall Hangings/Picture Frame Hanging</p>
+          </a>
+          <a href="#laundry" class="col-xl-2 col-lg-2 col-md-2 col-3"><img src="/assets/images/laundry-new 1.png"
+              alt="img" class="img-fluid">
+            <p>Laundry Installation</p>
+          </a>
+          <a href="#security" class="col-xl-2 col-lg-2 col-md-2 col-3"><img src="/assets/images/camera-new 1.png"
+              alt="img" class="img-fluid">
+            <p>Security Cameras</p>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="container service-cards-main py-3">
+      <div class="row service-cards mt-5 justify-content-center">
+        <div class="col-md-3 mb-5 service-card px-3">
+          <!-- <a href="#furniture" class="d-flex align-items-center"> -->
+          <div class="service-card-img"><img src="/assets/images/wardrobe 1-min.png" class="img-fluid" alt="image">
+          </div>
+          <div class="card-hover">
+            <h3>Wardrobe</h3>
+          </div>
+          <!-- </a> -->
+        </div>
+        <div class="col-md-3 mb-5 service-card px-3">
+          <!-- <a href="#furniture" class="d-flex align-items-center"> -->
+          <div class="service-card-img"><img src="/assets/images/card1-min.png" class="img-fluid" alt="image"></div>
+          <div class="card-hover">
+            <h3>Furniture/Flat <br> Pack Assembly</h3>
+          </div>
+          <!-- </a> -->
+        </div>
+        <div class="col-md-3 mb-5 service-card px-3">
+          <!-- <a href="#kicthen" class="d-flex align-items-center"> -->
+          <div class="service-card-img"><img src="/assets/images/card2-min.png" class="img-fluid" alt="image"></div>
+          <div class="card-hover">
+            <h3>kitchen <br> installation</h3>
+          </div>
+          <!-- </a> -->
+        </div>
+        <div class="col-md-3 mb-5 service-card px-3">
+          <!-- <a href="#roller" class="d-flex align-items-center"> -->
+          <div class="service-card-img"><img src="/assets/images/roller-new 1.png" class="img-fluid" alt="image"></div>
+          <div class="card-hover">
+            <h3>roller blinds supply and install</h3>
+          </div>
+          <!-- </a> -->
+        </div>
+        <div class="col-md-3 mb-5 service-card px-3">
+          <!-- <a href="#laundry" class="d-flex align-items-center"> -->
+          <div class="service-card-img"><img src="/assets/images/laundry-new 1.png" class="img-fluid" alt="image"></div>
+          <div class="card-hover">
+            <h3>laundry <br> Installation</h3>
+          </div>
+          <!-- </a> -->
+        </div>
+        <div class="col-md-3 mb-5 service-card px-3">
+          <!-- <a href="#garage" class="d-flex align-items-center"> -->
+          <div class="service-card-img"><img src="/assets/images/card5-min.png" class="img-fluid" alt="image"></div>
+          <div class="card-hover">
+            <h3>Garage storage and door automation</h3>
+          </div>
+          <!-- </a> -->
+        </div>
+        <div class="col-md-3 mb-5 service-card px-3">
+          <!-- <a href="#wall" class="d-flex align-items-center"> -->
+          <div class="service-card-img"><img src="/assets/images/card6-min.png" class="img-fluid" alt="image"></div>
+          <div class="card-hover">
+            <h3>Wall hangings | picture frame hanging</h3>
+          </div>
+          <!-- </a> -->
+        </div>
+        <div class="col-md-3 mb-5 service-card px-3">
+          <!-- <a href="#gym" class="d-flex align-items-center"> -->
+          <div class="service-card-img"><img src="/assets/images/card7-min 1-min.png" class="img-fluid" alt="image">
+          </div>
+          <div class="card-hover">
+            <h3>Gym and sports equipment</h3>
+          </div>
+          <!-- </a> -->
+        </div>
+        <div class="col-md-3 mb-5 service-card px-3">
+          <!-- <a href="#letter" class="d-flex align-items-center"> -->
+          <div class="service-card-img"><img src="/assets/images/card8-min.png" class="img-fluid" alt="image"></div>
+          <div class="card-hover">
+            <h3>letterbox <br> installation</h3>
+          </div>
+          <!-- </a> -->
+        </div>
+        <div class="col-md-3 mb-5 service-card px-3">
+          <!-- <a href="#letter" class="d-flex align-items-center"> -->
+          <div class="service-card-img"><img src="/assets/images/camera-new 1.png" class="img-fluid" alt="image"></div>
+          <div class="card-hover">
+            <h3>security <br> CAMERAS</h3>
+          </div>
+          <!-- </a> -->
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- service section end -->
+
+  <div id="wardrobe" class="id-tab"></div>
+  <!-- wardrob section start -->
+  <section class="py-5 section-main w-100 mt-5">
+    <img class="checbox-img" src="/assets/images/checkbox.gif" alt="image">
+    <img class="shadow-r" src="/assets/images/shadow-r.png" alt="img">
+    <div class="container-fluid px-5">
+      <div class="row align-items-center">
+        <div class="col-md-6 wardrob-img">
+          <img src="/assets/images/wardrobe.png" alt="img" class="img-fluid section-img">
+        </div>
+        <div class="col-md-6 px-5 wardrob-content pt-xl-3 pt-lg-3 pt-md-3 pt-0">
+          <h1 class="section-title">WARDROBE</h1>
+          <p class="section-para pt-5">Building your dream wardrobe can be expensive and time-consuming, but rest
+            assured, you're in safe hands if you're reading this. We specialize in making the entire process easy and
+            convenient for you. Here's how it works: </p>
+          <ul class="section-para ms-4 py-3">
+            <li class="mb-3">We'll visit your place to measure the space and discuss your wardrobe design preferences.
+            </li>
+            <li class="mb-3">Based on our consultation, we'll create a custom design for your dream wardrobe.</li>
+            <li class="mb-3">Once you're satisfied, we'll handle the ordering process.</li>
+            <li class="mb-3">After the delivery of the wardrobe components, our team will return to your place and take
+              care of the installation</li>
+          </ul>
+          <p class="section-para pb-4">In short, you can sit back and relax on your couch while witnessing the
+            remarkable
+            transformation of your wardrobe. We're here to make the entire experience hassle-free for you</p>
+          <a href="/gallery.html" class="gallery-btn">View Gallery</a>
+        </div>
+      </div>
+      <div id="garage" class="id-tab"></div>
+    </div>
+  </section>
+  <!-- wardrob section end -->
+
+  <!-- garage section start -->
+  <section class="py-5 section-main w-100">
+    <img class="shadow-l" src="/assets/images/shadow-l.png" alt="img">
+    <div class="container-fluid px-5">
+      <div class="row d-flex align-items-center">
+        <div class="col-md-6 pt-xl-3 pt-lg-3 pt-md-3 pt-3">
+          <h1 class="section-title">Garage storage</h1>
+          <p class="section-para pt-3 pb-4">Running out of space? Not anymore! <br> By adding cabinets to your walls,
+            you can
+            create ample storage and solve your storage woes. Contact us, and we'll assist you in transforming your
+            garage into a secure space for your belongings.</p>
+          <a href="/gallery.html" class="gallery-btn">View Gallery</a>
+        </div>
+        <div class="col-md-6 garag-img">
+          <img class="checbox-img" src="/assets/images/checkbox.gif" alt="image">
+          <img src="/assets/images/garage.png" alt="img" class="img-fluid section-img">
+        </div>
+      </div>
+      <div id="garageDoor"></div>
+    </div>
+  </section>
+  <!-- garage section end -->
+
+  <!-- garage door section start -->
+  <section class="py-5 section-main w-100 mt-5">
+    <img class="checbox-img" src="/assets/images/checkbox.gif" alt="image">
+    <img class="shadow-r" src="/assets/images/shadow-r.png" alt="img">
+    <div class="container-fluid px-5">
+      <div class="row d-flex">
+        <div class="col-md-6 wardrob-img">
+          <img src="/assets/images/door-new.png" alt="img" class="img-fluid section-img">
+        </div>
+        <div class="col-md-6 px-5 wardrob-content pt-xl-3 pt-lg-3 pt-md-3 pt-0">
+          <h1 class="section-title pt-3">Garage Door Automation</h1>
+          <p class="section-para pt-3 pb-4">Why bother carrying around a bulky remote and worrying about losing it?
+            Contact
+            us, and we'll automate your garage. With our system, you can conveniently use your phone and voice commands
+            to open and close your garage door from anywhere in the world. Say goodbye to missed deliveries that need
+            to be kept secure.</p>
+          <a href="/gallery.html" class="gallery-btn">View Gallery</a>
+        </div>
+      </div>
+      <div id="kicthen"></div>
+    </div>
+  </section>
+  <!-- garage door section end -->
+
+  <!-- kicthen section start -->
+  <section class="py-5 section-main w-100 mt-5">
+    <img class="checbox-img" src="/assets/images/checkbox.gif" alt="image">
+    <img class="shadow-r" src="/assets/images/shadow-r.png" alt="img">
+    <div class="container-fluid px-5">
+      <div class="row d-flex">
+        <div class="col-md-6 wardrob-img">
+          <img src="/assets/images/kicthen.png" alt="img" class="img-fluid section-img">
+        </div>
+        <div class="col-md-6 px-5 wardrob-content pt-xl-3 pt-lg-3 pt-md-3 pt-0">
+          <h1 class="section-title">kitchen <br> installation</h1>
+          <p class="section-para pt-5 pb-4">Ah, that kitchen with ample space, easy accessibility to everything, and an
+            ambiance that brings joy. The happiness you feel is reflected in the incredible food you cook. Yes, we
+            specialize in designing and installing those delightful kitchens that create lasting family memories.</p>
+          <a href="/gallery.html" class="gallery-btn">View Gallery</a>
+        </div>
+      </div>
+      <div id="furniture" class="id-tab"></div>
+    </div>
+  </section>
+  <!-- kicthen section end -->
+
+  <!-- flat pack section start -->
+  <section class="py-5 section-main w-100">
+    <img class="shadow-r" src="/assets/images/shadow-r.png" alt="img">
+    <div class="container-fluid px-5 mt-5">
+      <div class="row d-flex">
+        <div class="col-md-6 pt-xl-3 pt-lg-3 pt-md-3 pt-0">
+          <h1 class="section-title">Furniture / Flat Pack Assembly</h1>
+          <p class="section-para pt-3">Flat packs can be both a great purchase and a source of annoyance when it comes
+            to assembly. While they offer affordability and convenience, putting them together can be quite a challenge.
+            That's where we come in to help. Instead of struggling with assembling your flat pack furniture, you can
+            simply book our services. </p>
+          <p class="section-para pt-3 pb-4">Our team of professionals will handle the task for you, allowing you to sit
+            back
+            on your couch and witness the job being done in a skilled and professional manner. Leave the hard work to us
+            and enjoy the convenience of having your flat pack furniture expertly assembled.</p>
+          <a href="/gallery.html" class="gallery-btn">View Gallery</a>
+        </div>
+        <div class="col-md-6 flat-pack-img">
+          <img class="checbox-img" src="/assets/images/checkbox.gif" alt="image">
+          <img src="/assets/images/furniture.png" alt="img" class="img-fluid section-img">
+        </div>
+      </div>
+      <div id="roller"></div>
+    </div>
+  </section>
+  <!-- flat pack section end -->
+
+  <!-- roller section start -->
+  <section class="py-5 section-main w-100">
+    <img class="checbox-img" src="/assets/images/checkbox.gif" alt="image">
+    <img class="shadow-r" src="/assets/images/shadow-r.png" alt="img">
+    <div class="container-fluid px-5">
+      <div class="row d-flex">
+        <div class="col-md-6 security-img">
+          <img src="/assets/images/roller.png" alt="img" class="img-fluid section-img">
+        </div>
+        <div class="col-md-6 px-5 security-content pt-xl-5 pt-lg-5 pt-md-5 pt-0">
+          <h1 class="section-title pt-xl-5 pt-lg-5 pt-md-5 pt-0">roller blinds <br> supply & install</h1>
+          <p class="section-para pt-5 pb-4">Roller blinds are a crucial element of home decor, providing privacy and
+            temperature control. With a variety of colors and shades available, they enhance the beauty of any space. We
+            offer measurement and installation services to ensure a seamless experience for our customers. Contact us to
+            choose the perfect roller blinds for your home today!</p>
+          <a href="/gallery.html" class="gallery-btn">View Gallery</a>
+        </div>
+      </div>
+      <div id="gym" class="id-tab"></div>
+    </div>
+  </section>
+  <!-- roller section end -->
+
+  <!-- gym section start -->
+  <section class="py-5 section-main w-100">
+    <img class="shadow-l" src="/assets/images/shadow-l.png" alt="img">
+    <div class="container-fluid px-5">
+      <div class="row d-flex align-items-center">
+        <div class="col-md-6 pt-xl-3 pt-lg-3 pt-md-3 pt-0">
+          <h1 class="section-title pt-xl-0 pt-lg-0 pt-md-0 pt-3">Gym and sports <br> equipment</h1>
+          <p class="section-para pt-3 pb-4">Staying fit is important, whether through traditional gym equipment like
+            treadmills and exercise bikes, or by enjoying sports like basketball or table tennis. We understand that
+            setting up this equipment can be a hassle, but don't worry - we're here to help. Our installation service
+            ensures that your gym or sports equipment is set up properly, allowing you to focus on your fitness goals
+            without the stress of assembly. Let us help you create your ideal workout space!</p>
+          <a href="/gallery.html" class="gallery-btn">View Gallery</a>
+        </div>
+        <div class="col-md-6 garag-img">
+          <img class="checbox-img" src="/assets/images/checkbox.gif" alt="image">
+          <img src="/assets/images/gym.png" alt="img" class="img-fluid section-img">
+        </div>
+      </div>
+      <div id="letter"></div>
+    </div>
+  </section>
+  <!-- gym section end -->
+
+  <!-- letter section start -->
+  <section class="py-5 section-main w-100">
+    <img class="checbox-img" src="/assets/images/checkbox.gif" alt="image">
+    <img class="shadow-r" src="/assets/images/shadow-r.png" alt="img">
+    <div class="container-fluid px-5">
+      <div class="row d-flex">
+        <div class="col-md-6 security-img">
+          <img src="/assets/images/letter.png" alt="img" class="img-fluid section-img">
+        </div>
+        <div class="col-md-6 px-5 security-content pt-xl-5 pt-lg-5 pt-md-5 pt-0">
+          <h1 class="section-title pt-xl-5 pt-lg-5 pt-md-5 pt-0">letter box <br> installation</h1>
+          <p class="section-para pt-5 pb-4">A sturdy letterbox is indeed a loyal guardian, standing strong against all
+            types
+            of weather. Our installation service ensures that your letterbox remains steadfast, no matter the
+            conditions. With our guarantee, you can trust that your letterbox will always be there, ready to receive
+            your mail, regardless of what the elements throw its way. Let us install your letterbox and provide you
+            with peace of mind!</p>
+          <a href="/gallery.html" class="gallery-btn">View Gallery</a>
+        </div>
+      </div>
+      <div id="wall" class="id-tab"></div>
+    </div>
+  </section>
+  <!-- letter section end -->
+
+  <!-- wall pack section start -->
+  <section class="py-5 section-main w-100">
+    <img class="shadow-r" src="/assets/images/shadow-r.png" alt="img">
+    <div class="container-fluid px-5 mt-5">
+      <div class="row d-flex">
+        <div class="col-md-6 pt-xl-3 pt-lg-3 pt-md-3 pt-0">
+          <h1 class="section-title">Wall hangings / picture frame hanging</h1>
+          <p class="section-para pt-3 pb-4">Enhancing the beauty of your home, decorative walls bring an aesthetic
+            touch.
+            However, hanging art and pictures on plaster walls can be challenging, requiring precise alignment. That's
+            where our expertise comes in. We take pride in our skill of flawlessly hanging frames on walls; it's not
+            just a job, but a passion for us. Using various techniques, we ensure your items are securely mounted, no
+            matter how heavy they may be.</p>
+          <a href="/gallery.html" class="gallery-btn">View Gallery</a>
+        </div>
+        <div class="col-md-6 flat-pack-img">
+          <img class="checbox-img" src="/assets/images/checkbox.gif" alt="image">
+          <img src="/assets/images/wall.png" alt="img" class="img-fluid section-img">
+        </div>
+      </div>
+      <div id="laundry"></div>
+    </div>
+  </section>
+  <!-- wall pack section end -->
+
+  <!-- laundry section start -->
+  <section class="py-5 section-main w-100">
+    <img class="checbox-img" src="/assets/images/checkbox.gif" alt="image">
+    <img class="shadow-r" src="/assets/images/shadow-r.png" alt="img">
+    <div class="container-fluid px-5">
+      <div class="row d-flex">
+        <div class="col-md-6 security-img">
+          <img src="/assets/images/laundry-new.png" alt="img" class="img-fluid section-img">
+        </div>
+        <div class="col-md-6 px-5 security-content pt-xl-5 pt-lg-5 pt-md-5 pt-0">
+          <h1 class="section-title pt-xl-5 pt-lg-5 pt-md-5 pt-0">laundry <br> installation</h1>
+          <p class="section-para pt-5 pb-4">Laundry is all about space. We're here to assist you in adding cabinets to
+            your
+            laundry area, providing extra storage for your sheets, towels, and more. Let us help you maximize the space
+            and keep your laundry organized.</p>
+          <a href="/gallery.html" class="gallery-btn">View Gallery</a>
+        </div>
+      </div>
+      <div id="security"></div>
+    </div>
+  </section>
+  <!-- laundry section end -->
+
+  <!-- security pack section start -->
+  <section class="py-5 section-main w-100">
+    <img class="shadow-r" src="/assets/images/shadow-r.png" alt="img">
+    <div class="container-fluid px-5 mt-5">
+      <div class="row d-flex align-items-center">
+        <div class="col-md-6 pt-xl-3 pt-lg-3 pt-md-3 pt-3">
+          <h1 class="section-title">Security cameras</h1>
+          <p class="section-para pt-3"> The safety of your home and family is of utmost importance. Providing a sense of
+            security not only brings peace of mind but also boosts confidence, especially for kids. We specialize in
+            installing top-notch cameras both inside and outside your house, transforming it into a safer place to live.
+          </p>
+          <p class="section-para pt-3 pb-4">Our service is unmatched, offering the best technology experts who can go
+            beyond
+            just cameras. We provide
+            unbeatable prices and a range of advanced security solutions to ensure the highest level of protection for
+            your home and loved ones. Rest assured, with our expertise, you'll have enhanced security and peace of mind.
+          </p>
+          <a href="/gallery.html" class="gallery-btn">View Gallery</a>
+        </div>
+        <div class="col-md-6 flat-pack-img">
+          <!-- <img class="checbox-img" src="/assets/images/checkbox.gif" alt="image"> -->
+          <img src="/assets/images/security.png" alt="img" class="img-fluid section-img">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- security pack section end -->
+
+  <!-- footer section start -->
+  <footer class="position-relative ">
+    <img class="footer-shadow" src="/assets/images/footer-shadow.png" alt="shadow">
+    <div class="container-fluid px-5">
+      <div class="row flex-wrap d-flex">
+        <div class="col-xl-2 col-lg-3 col-md-12 col-12 footer-logo logo"><img src="/assets/images/logo1.svg" alt="logo">
+        </div>
+        <div class="col-xl-8 col-lg-9 col-md-12 col-12 footer-info d-flex">
+          <div class="in-touch">
+            <h3>Get In Touch</h3>
+            <!-- <a href="#" class="d-flex align-items-center gap-3"><img src="/assets/icons/footer-location.png"
+                alt="icon"><span>4517 Washington Manchester,
+                Kentucky 39495</span></a> -->
+          </div>
+          <div class="line"></div>
+          <div class="call">
+            <a href="tel:040 1-967-967" class="d-flex align-items-center gap-3"><img src="/assets/icons/footer-call.png"
+                alt="icon"><span>0401967967</span></a>
+          </div>
+          <div class="line"></div>
+          <div class="mail">
+            <a href="mailto:Info@servicesquare.com.au" class="d-flex align-items-center gap-3"><img
+                src="/assets/icons/footer-mail.png" alt="icon"><span>Info@servicesquare.com.au</span></a>
+          </div>
+        </div>
+        <div class="col-xl-2 col-lg-12 col-md-12 col-12 footer-social d-flex align-items-end">
+          <div class="header-social d-flex align-items-center">
+            <a href="https://www.facebook.com/profile.php?id=100024313282542&mibextid=LQQJ4d" target="_blank"><img
+                src="/assets/icons/fb.png" alt="icon"></a>
+            <a href="#"><img src="/assets/icons/twitter.png" alt="icon"></a>
+            <a href="#"><img src="/assets/icons/insta.png" alt="icon"></a>
+            <a href="#"><img src="/assets/icons/in.png" alt="icon"></a>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="cop-right d-flex">
+          <p>Service Square, 2024. All rights reserved</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- footer section end -->
+  <!-- back-to-top btn -->
+  <a href="#back-to-top" class="btn btn-light btn-lg back-to-top d-flex align-items-center justify-content-center"
+    role="button"><img src="/assets/icons/up.png" alt="icon"></a>
+
+  <script>
+    var url = 'https://wati-integration-prod-service.clare.ai/v2/watiWidget.js?19286';
+    var s = document.createElement('script');
+    s.type = 'text/javascript';
+    s.async = true;
+    s.src = url;
+    var options = {
+      "enabled": true,
+      "chatButtonSetting": {
+        "backgroundColor": "#00e785",
+        "ctaText": "Chat with us",
+        "borderRadius": "25",
+        "marginLeft": "0",
+        "marginRight": "20",
+        "marginBottom": "80",
+        "ctaIconWATI": false,
+        "position": "right"
+      },
+      "brandSetting": {
+        "brandName": "ServiceSqaure",
+        "brandSubTitle": "undefined",
+        "brandImg": "https://servicesquare.com.au/assets/images/favicon.svg",
+        "welcomeText": "Hi there!\nHow can I help you?",
+        "messageText": "Hello, %0A I saw this on {{page_title}} {{page_link}}",
+        "backgroundColor": "#00e785",
+        "ctaText": "Chat with us",
+        "borderRadius": "25",
+        "autoShow": false,
+        "phoneNumber": "610401967967"
+      }
+    };
+    s.onload = function () {
+      CreateWhatsappChatWidget(options);
+    };
+    var x = document.getElementsByTagName('script')[0];
+    x.parentNode.insertBefore(s, x);
+  </script>
+
+</body>
+
+</html>
